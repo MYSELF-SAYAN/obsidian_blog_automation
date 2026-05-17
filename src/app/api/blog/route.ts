@@ -50,6 +50,7 @@ export async function POST(req: NextRequest): Promise<NextResponse<BlogResponse>
       title: scrapedContent.title
     });
   } catch (error) {
+    console.error(error)
     logger.error(
       `[${requestId}] Blog import failed`,
       error instanceof Error ? error : { error }

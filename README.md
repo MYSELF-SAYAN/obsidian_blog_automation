@@ -184,35 +184,6 @@ ui/
 
 ---
 
-## Claude Code Integration
-
-This project was built with **Claude Code** — Anthropic's AI coding assistant.
-
-### Use Claude Code in this folder:
-
-```bash
-# Start interactive session
-claude
-
-# Ask specific questions
-claude "How do I add a new blog parser?"
-
-# Run tasks
-claude "Add a feature to auto-tag notes"
-
-# Debug issues
-claude "Fix the scraper not working"
-```
-
-### Claude Code Features Used
-- Full-stack Next.js development
-- TypeScript type definitions
-- API route architecture
-- Server-side service integration
-- UI component design
-
----
-
 ## Scripts
 
 | Command | Description |
@@ -256,14 +227,9 @@ await obsidian.linking.createLink({
 
 ---
 
-## License
+## References
 
-MIT — **Built with Claude Code** ⚡
+- [obsidian-sdk](https://www.npmjs.com/package/obsidian-sdk) — Official npm package
+- [obsidian_cli_sdk](https://github.com/MYSELF-SAYAN/obsidian_cli_sdk) — GitHub repository
+- [Obsidian SDK Docs](https://obsidiansdk.vercel.app/) — Documentation & API reference
 
----
-
-<p align="center">
-  <a href="https://claude.com/claude-code">
-    <img src="https://img.shields.io/badge/Claude-Code-Built-blueviolet?style=for-the-badge" alt="Claude Code">
-  </a>
-</p>

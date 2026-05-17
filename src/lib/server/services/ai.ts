@@ -5,7 +5,7 @@ import logger from "../logger";
 
 const openai = new OpenAI({
   apiKey: config.openaiApiKey,
-  baseURL: "https://opencode.ai/zen/v1",
+  baseURL: "https://api.groq.com/openai/v1",
 });
 
 export async function convertToMarkdown(
@@ -36,7 +36,7 @@ Requirements:
   logger.ai(`Converting content to markdown: "${scrapedContent.title}"`);
 
   const response = await openai.chat.completions.create({
-    model: "minimax-m2.5-free",
+    model: "openai/gpt-oss-120b",
     messages: [
       {
         role: "system",
