@@ -226,7 +226,12 @@ await obsidian.linking.createLink({
 ```
 
 ---
+## Demo
 
+
+https://github.com/user-attachments/assets/063cedcf-a6b0-428c-b683-a83b588cff50
+
+---
 ## References
 
 - [obsidian-sdk](https://www.npmjs.com/package/obsidian-sdk) — Official npm package
