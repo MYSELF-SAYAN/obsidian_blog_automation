@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --canvas: #faf9f5;
+    --primary: #cc785c;
+    --navy: #1a1a2e;
+    --surface: #1a1a2e;
+    --text: #2a2a2a;
+    --text-muted: #707070;
+    --accent: #f4a460;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-canvas text-text font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-md py-sm rounded-md bg-primary text-white font-medium hover:opacity-90 transition-opacity;
+  }
+
+  .btn-secondary {
+    @apply px-md py-sm rounded-md border border-primary text-primary font-medium hover:bg-primary hover:text-white transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-lg border border-gray-200 shadow-sm p-lg;
+  }
+
+  .input-field {
+    @apply w-full px-md py-sm rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary transition-colors;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 360ms cubic-bezier(.2,.8,.2,1) both;
+  }
+
+  /* Subtle Claude-like accent gradient */
+  .bg-claude-gradient {
+    background: linear-gradient(90deg, rgba(204,120,92,0.06), rgba(244,164,96,0.06));
+  }
+}
